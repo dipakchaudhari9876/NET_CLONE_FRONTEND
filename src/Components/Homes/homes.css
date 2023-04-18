@@ -2,50 +2,62 @@
     /* position: absolute; */
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 700px;
     width: 100%;
     color: #fff;
 }
 
 .homeContainer {
     position: relative;
+    height: 700px;
+    width: 100%;
 }
 
 .coverImage {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 700px;
     z-index: -2;
+
+}
+
+.box{
+    width: 100vw;
+    height: 700px;
 }
 
 .coverImage img {
     width: 100vw;
-    height: 100vh;
+    height: 700px;
     object-fit: cover;
 }
 
 .content {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 100px;
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
 }
 
-.details{
+.details {
     width: 60%;
 }
 
-.details_header{
+.details_header {
     margin-top: 40px;
-    font-size: 90px;
+    margin-bottom: 20px;
+    font-size: 75px;
     text-transform: uppercase;
     font-weight: 800;
-    background-image:url("./../../../public/images/texure.jpg");
+    background-image: url("./../../../public/images/texure.jpg");
     background-repeat: repeat;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-font-smoothing:antialiased
+    -webkit-font-smoothing: antialiased
 }
 
 .coverImage::after {
@@ -54,55 +66,64 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 700px;
     z-index: 88;
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
-.details_rating{
+.details_rating {
     display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.home_rate_icon{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.details_rating >.starIcon{
+.details_rating>.starIcon {
     margin: 30px 0;
 }
 
-.details_rating>label{
-    margin:0px  20px;
+.details_rating>label {
+    margin: 0px 20px;
     font-size: 17px;
     font-weight: 500;
 }
 
-.details_rating>span{
-    margin-left:7px;
+.details_rating>span {
+    margin-left: 7px;
     font-size: 17px;
     font-weight: 600;
-    padding: 5px ;
+    padding: 5px;
     background-color: gray;
 }
 
-.detail_desc{
+.detail_desc {
     margin-bottom: 20px;
     font-size: 17px;
     font-weight: 500;
 }
 
-.cast > h4{
+.cast>h4 {
     margin: 10px 0px;
 }
-.cast > h4 span{
+
+.cast>h4 span {
     color: rgb(245, 8, 8);
     font-size: 18px;
     font-weight: 500;
 }
-.cast > h4{
+
+.cast>h4 {
     font-size: 17px;
     font-weight: 400;
 }
 
-.btn{
-    margin-top: 20px ;
+.btn {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     padding: 8px 15px;
@@ -115,14 +136,14 @@
     cursor: pointer;
 }
 
-.playButton{
+.playButton {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.playButton_btn{
+.playButton_btn {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -134,44 +155,57 @@
     color: white;
     cursor: pointer;
     letter-spacing: 2px;
-  transition: 0.2s;
+    transition: 0.2s;
 }
 
-.playButton img{
+.playButton img {
     width: 60px;
     height: 60px;
     margin: 0px 10px;
 }
 
-.playButton button:hover{
+.playButton button:hover {
     padding: 5px 8px;
     background-color: red;
     border-radius: 5px;
 }
 
-.ctrl-btn button{
+.ctrl-btn button {
     background-color: transparent;
     padding: 0;
     width: 50px;
     height: 50px;
     cursor: pointer;
     border-radius: 50%;
-    border: 3px solid rgba(255,255,255,0.3);
+    border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
-.ctrl-btn button:hover{
+.ctrl-btn button:hover {
     background-color: rgb(173, 168, 168);
 }
 
-.ctrl-btn .next{
+.ctrl-btn .next {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 2%;
 }
 
-.ctrl-btn .prev{
+.ctrl-btn .prev {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 2%;
     z-index: 99;
+}
+
+@media only screen and (max-width:769px){
+    .playButton {
+        width: 0%;
+    }
+    .playButton_btn {
+        display: none
+    }
+
+    .details {
+        width: 100%;
+    }
 }

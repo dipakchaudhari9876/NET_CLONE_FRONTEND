@@ -1,6 +1,6 @@
 .Upcoming{
     width:95%;
-    margin:auto
+    margin:20px auto
 }
 
 .Upcoming_head{
@@ -12,6 +12,7 @@
 
 .Upcoming_head h1{
     color: white;
+    font-size: 22px;
 }
 
 .Upcoming_head> Link{
@@ -25,8 +26,8 @@
 .Ucard{
     margin: 20px;
     position:relative;
-    width: 440px;
-    height: 300px;
+    width: 90%;
+    height: 250px;
     transition: 0.5s;
     z-index: 1;
 }
@@ -41,8 +42,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 440px;
-  height: 300px;
+  width: 90%;
+  height: 250px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.4) 50%, rgba(83, 100, 141, 0) 100%);
   z-index: -1;
 }

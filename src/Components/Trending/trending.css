@@ -1,8 +1,10 @@
 .Trending{
     color: white;
+    margin-top: 10px;
 }
 
 .trending_head{
     padding-left: 35px;
     margin-bottom: 30px;
+    font-size: 22px;
 }

@@ -20,15 +20,16 @@ const HomeCard = ({ id, name, cover, rating, time, desc, starring, genres, tags,
           <div className="details">
             <h1 className='details_header'>{name}</h1>
             <div className="details_rating">
-              <StarIcon className='starIcon' style={{color:"red"}}></StarIcon>
-              <StarIcon className='starIcon' style={{color:"red"}}></StarIcon>
-              <StarIcon className='starIcon' style={{color:"red"}}></StarIcon>
-              <StarIcon className='starIcon' style={{color:"red"}}></StarIcon>
-              <StarHalfIcon style={{color:"red"}} className='starIcon'></StarHalfIcon>
-            
-            <label>{rating}&nbsp;(imdb)</label>
-            <span>GP</span>
-            <label>{time}</label>
+              <div className="home_rate_icon">
+                <StarIcon className='starIcon' style={{ color: "red" }}></StarIcon>
+                <StarIcon className='starIcon' style={{ color: "red" }}></StarIcon>
+                <StarIcon className='starIcon' style={{ color: "red" }}></StarIcon>
+                <StarIcon className='starIcon' style={{ color: "red" }}></StarIcon>
+                <StarHalfIcon style={{ color: "red" }} className='starIcon'></StarHalfIcon>
+              </div>
+              <label>{rating}&nbsp;(imdb)</label>
+              <span>GP</span>
+              <label>{time}</label>
             </div>
 
             <p className='detail_desc'>{desc}</p>
@@ -46,7 +47,7 @@ const HomeCard = ({ id, name, cover, rating, time, desc, starring, genres, tags,
                 {tags}
               </h4>
             </div>
-            <button className='btn' onClick={()=>{
+            <button className='btn' onClick={() => {
               navigate(`/single/${id}`)
             }}>
               <PlayArrowIcon></PlayArrowIcon>
@@ -55,17 +56,15 @@ const HomeCard = ({ id, name, cover, rating, time, desc, starring, genres, tags,
           </div>
 
           <div className="playButton">
-            <Link>
-              <button className='playButton_btn' onClick={()=>{
-                navigate(`/single/${id}`)
-              }}>
-                <div className="playButton-img">
-                  <img src={"/images/play-button.png"} alt="btn" />
-                  {/* <img src={"/images/play.png"} alt="btn-paly" className='change' /> */}
-                </div>
-                WATCH TRAILER
-              </button>
-            </Link>
+            <button className='playButton_btn' onClick={() => {
+              navigate(`/single/${id}`)
+            }}>
+              <div className="playButton-img">
+                <img src={"/images/play-button.png"} alt="btn" />
+                {/* <img src={"/images/play.png"} alt="btn-paly" className='change' /> */}
+              </div>
+              WATCH TRAILER
+            </button>
           </div>
         </div>
       </div>
