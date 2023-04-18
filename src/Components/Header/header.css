@@ -1,0 +1,128 @@
+.header{
+    height: 10vh;
+    line-height: 7vh;
+    background: transparent;
+    background-image: linear-gradient(to right bottom,rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,0.5),rgba(0,0,0,0));
+    color: white;
+    position: relative;
+    z-index: 999;
+}
+
+.container{
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont-links li{
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 150px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.toggle{
+    display: none;
+    padding: 12px 40px;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.menu{
+    font-size: 2rem;
+}
+
+.account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    width: 45px;
+    height: 45px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.account-btn{
+    padding: 12px 40px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:760px) {
+
+    .cont-links{
+    display: none;
+    }
+
+    .account{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        top: 10;
+        bottom: 10;
+        right: 20px;
+        margin: auto;
+        cursor: pointer;
+        background-color: none;
+        
+    }
+
+    .navMenu-list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        background-color: red;
+        width: 50%;
+        height: 90vh;
+        z-index: 999;
+    }
+
+    .navMenu-list li{
+        margin-left: 15px;
+        font-size: 22px;
+        cursor: pointer;
+        margin-bottom: 25px;
+    }
+
+}

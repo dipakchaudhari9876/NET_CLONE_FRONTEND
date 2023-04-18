@@ -1,0 +1,96 @@
+.Login{
+    width: 400px;
+    height: fit-content;
+    padding: 30px 20px;
+    /* border: 1px solid black; */
+    background-color:rgba(30, 26, 26, 0.8);
+    border-radius: 5px;
+}
+
+.Login h1{
+    color: white;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(8, 8, 8, 0.6) ;
+    border-radius: 3px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+
+}
+
+.form_password{
+    position: relative;
+}
+
+.pass_icon{
+    color: rgb(132, 129, 129);
+    position: absolute;
+    top: 23px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.form_btn{
+    margin-top: 20px;
+    width: 100%;
+    height: 45px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.bottom_detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+
+}
+
+.bottom_detail_left{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bottom_detail_left input{
+    width: 28px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.bottom_detail_right{
+    cursor: pointer;
+}
+
+.bottom_register{
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.bottom_register span{
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(23, 91, 207);
+    cursor: pointer;
+}
