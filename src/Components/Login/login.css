@@ -94,3 +94,11 @@ input{
     color: rgb(23, 91, 207);
     cursor: pointer;
 }
+
+@media only screen and (max-width:769px){
+    .Login {
+        width: 413px;
+        padding: 34px 20px;
+    }
+}
+

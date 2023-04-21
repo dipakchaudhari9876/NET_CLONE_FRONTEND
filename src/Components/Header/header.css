@@ -92,6 +92,11 @@
     }
 
     .account{
+        position: absolute;
+        right: 126px;
+    }
+
+    .account-btn{
         display: none;
     }
     .toggle{
@@ -114,13 +119,15 @@
         left: 0;
         background-color: red;
         width: 50%;
-        height: 91vh;
+        height: 100vh;
         z-index: 999;
+        padding-top: 20px;
     }
 
     .navMenu-list li{
         margin-left: 15px;
-        font-size: 22px;
+        font-size: 30px;
+        font-weight: 500;
         cursor: pointer;
         margin-bottom: 25px;
     }

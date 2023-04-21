@@ -4,6 +4,8 @@ import Footer from '../Footer/Footer'
 import './auth.css'
 import Login from '../Login/Login'
 import Register from '../Register/Register'
+import Profile from '../Profile/Profile'
+import { getToken } from '../../Check'
 
 const Auth = () => {
 
@@ -12,8 +14,10 @@ const Auth = () => {
     return (<>
         <Header/>
         <div className="Auth">
-            {login && <Login change={setLogin}/>}
-            {!login && <Register change={setLogin}/> }
+            {!getToken() && login && <Login change={setLogin}/>}
+            {!getToken() && !login && <Register change={setLogin}/> }
+            {getToken() && <Profile/>}
+            
         </div>
         <Footer/>
     </>
